@@ -1,13 +1,20 @@
-import {} from "react";
-
+import AuthOverlay from "./components/AuthOverlay"
+import "./index.css"
+import useGeneralStore from "./stores/generalStore"
+import EditProfileOverlay from "./components/EditProfileOverlay"
 function App() {
+  const isLoginOpen = useGeneralStore((state) => state.isLoginOpen)
+  const isEditProfileOpen = useGeneralStore((state) => state.isEditProfileOpen)
   return (
-    <>
-      <div className="flex items-center justify-center h-screen">
-        <div className="text-red-500 text-center">Hello World!</div>
-      </div>
-    </>
-  );
+    <div className=" ">
+      {isLoginOpen && (
+        <>
+          <AuthOverlay />
+        </>
+      )}{" "}
+      {isEditProfileOpen && <EditProfileOverlay />}
+    </div>
+  )
 }
 
-export default App;
+export default App
