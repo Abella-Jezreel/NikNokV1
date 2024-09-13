@@ -7,7 +7,7 @@ import { useQuery } from "@apollo/client"
 function Feed() {
   const loadMoreRef = React.useRef(null)
 
-  const { data, loading, fetchMore } = useQuery(GET_ALL_POSTS, {
+  const { data, fetchMore } = useQuery(GET_ALL_POSTS, {
     variables: { skip: 0, take: 2 },
   })
 

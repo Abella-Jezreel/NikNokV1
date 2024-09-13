@@ -1,17 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-import App from "./App.tsx"
+import App from "./App"
 import "./index.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Feed from "./pages/Feed.tsx"
-import Upload from "./pages/Upload.tsx"
-import Profile from "./pages/Profile.tsx"
-import SinglePost from "./pages/SinglePost.tsx"
+import Feed from "./pages/Feed"
+import Upload from "./pages/Upload"
+import Profile from "./pages/Profile"
+import SinglePost from "./pages/SinglePost"
 import { ApolloProvider } from "@apollo/client"
-import { client } from "./utils/apolloClient.ts"
+import { client } from "./utils/apolloClient"
 import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev"
-import ProtectedRoutes from "./components/ProtectedRoutes.ts"
+import ProtectedRoutes from "./components/ProtectedRoutes"
 
 loadDevMessages()
 loadErrorMessages()
