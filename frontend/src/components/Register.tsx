@@ -9,7 +9,7 @@ function Register() {
   const [registerUser, { error, data }] = useMutation(REGISTER_USER)
   const setUser = useUserStore((state) => state.setUser)
   const setIsLoginOpen = useGeneralStore((state) => state.setLoginIsOpen)
-  //errors is an object with property of email, password, fullname, confirmPassword mapped to an error message. type it properly
+  //errors is an object with property of email, password, full-name, confirmPassword mapped to an error message. type it properly
   const [errors, setErrors] = React.useState<GraphQLErrorExtensions>({})
   const handleRegister = async () => {
     try {
