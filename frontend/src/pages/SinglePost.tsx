@@ -276,7 +276,7 @@ function SinglePost() {
           >
             <video
               ref={video}
-              src={"http://localhost:3001/" + dataPost.getPostById.video}
+              src={"http://localhost:3000/" + dataPost.getPostById.video}
               loop
               muted
               className="h-screen mx-auto"

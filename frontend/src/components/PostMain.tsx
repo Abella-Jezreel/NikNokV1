@@ -61,7 +61,7 @@ function PostMain({ post }: { post: PostType }) {
           <div className="relative min-h-[480px] max-h-[580px] max-w-[260px] flex items-center bg-black rounded-xl">
             <video
               ref={video}
-              src={"http://localhost:3001/" + post.video}
+              src={"http://localhost:3000/" + post.video}
               loop
               muted
               className="rounded-xl object-cover mx-auto h-full"
