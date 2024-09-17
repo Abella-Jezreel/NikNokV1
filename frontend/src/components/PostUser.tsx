@@ -64,7 +64,7 @@ function PostUser({ post }: { post: PostType }) {
             muted
             loop
             className="aspect-[3/4] object-cover rounded-md"
-            src={"http://localhost:3000/" + post.video}
+            src={"http://localhost:3001/" + post.video}
           />
         </div>
         <div className="px-1">

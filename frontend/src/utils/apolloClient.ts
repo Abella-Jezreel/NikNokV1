@@ -69,7 +69,7 @@ const errorLink = onError(({ graphQLErrors, operation, forward }) => {
   }
 })
 const uploadLink = createUploadLink({
-  uri: "http://localhost:3000/graphql",
+  uri: "http://localhost:3001/graphql",
   credentials: "include",
   headers: {
     "apollo-require-preflight": "true",
@@ -77,7 +77,7 @@ const uploadLink = createUploadLink({
 })
 
 export const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",
+  uri: "http://localhost:3001/graphql",
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
