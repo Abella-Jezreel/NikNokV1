@@ -19,7 +19,7 @@ import { PrismaService } from './prisma.service';
   imports: [
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'), // This points to the 'public' folder where your static files are located
-      serveRoot: '/', // This means files will be available under 'http://localhost:3000/files/'
+      serveRoot: '/', // This means files will be available under 'http://localhost:3001/files/'
     }),
     AuthModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
